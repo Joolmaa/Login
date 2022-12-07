@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nerko+One&display=swap" rel="stylesheet">
+    <title>LOGIN</title>
+</head>
+<body>
+        <div class="titulo-login">
+            <h1>Login</h1>
+            <input type="email" placeholder="email">
+            <br>
+            <br>
+            <img src="/olho.png" class="btn">
+            <input type="password" placeholder="senha" class="senha">
+            
+            <br>
+            <br>
+            <button>Enviar</button>
+        </div>
+        
+</body>
+</html>
+
+<script>
+
+    const senha = document.querySelector('.senha');
+    const btn = document.querySelector('.btn');
+
+    btn.onclick = () =>
+    {
+        if (senha.type === 'password') {
+
+            senha.type = 'text'
+            console.log('type password')
+        }
+        else {
+            senha.type = 'password'
+        }
+    }
+
+
+</script>
